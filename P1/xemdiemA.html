@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Value"></p>
+    <script>
+        const student=[
+            {name:"A",
+            score: 9},
+            {name:"B",
+            score: 8},
+            {name:"C",
+            score: 11},
+        ];
+
+        student.sort((a,b)=> b.score - a.score);
+        const place=student.findIndex(value => value.name==="A")+1;
+        document.getElementById("Value").innerHTML="Thứ hạng của A là:" + place;
+        console.log(student)
+
+
+    </script>
+</body>
+</html>
